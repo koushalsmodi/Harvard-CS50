@@ -12,3 +12,4 @@ def shorten(word):
             shortened.append(i)
     output = str("".join(shortened))
     return output
+main()

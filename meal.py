@@ -14,6 +14,7 @@ def main():
         print('dinner time')
 
 def convert(time):
+    # converting time
     hours, minutes = time.split(":")
     hours = float(hours) + (float(minutes) / 60)
     return hours

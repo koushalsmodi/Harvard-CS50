@@ -19,7 +19,7 @@ def bitcoin_price(n):
         result = response.json() # get the information in the json format
         price = result['bpi']['USD']['rate_float'] # penetrate inside the dictionaries until we reach rate_float
         amount = price * n # multiply the user entered value by the price obtained from the list of dictionaries
-        print(f'${amount:,.4f}') # convert amount to 4 decimal places
+        print(f'${amount:,.4f}') # convert amount to 4 decimal places 
 
     except requests.RequestException:
         return None # any ambiguous exception that occurred while handling the request
